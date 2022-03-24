@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("fruits.jpg");
+
+  min-height: 180px;
+  max-width:250px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bg-img1 {
+  /* The image used */
+  background-image: url("red.jpg");
+
+  min-height: 800px;
+  max-width:100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 700px;
+  max-height: 98%;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.container{
+    position:relative;
+    left:220px;
+    top:40px;
+    
+}
+.container{
+    position:relative;
+    bottom:30px;
+    top:30px;
+}
+.container{
+    width:200%;
+    position:relative;
+    right:5px;
+    top:15px;
+    bottom:10px;
+}
+.container{
+    position:relative;
+    bottom:15px;
+}
+.bg-img{
+    position: relative;
+    top:20px;
+
+}
+</style>
+</head>
+<body>
+
+<div class="bg-img1">
+<div class="bg-img">
+  <form action="/action_page.php" class="container">
+    <h2>REGISTRATION INFO</h2>
+
+    <label for="email"><b>Name</b></label width="40px;">
+    <input type="text"  name="email" required>
+
+    <label for="psw"><b>Birthdate</b></label>
+    <input type="password"  name="psw" required>
+    <label for="cars">Gender</label>
+
+    <select id="cars">
+      <option value="volvo"></option>
+      <option value="saab">Female</option>
+      <option value="opel">Opel</option>
+      <option value="audi">Audi</option>
+    </select>
+    <label for="cars" class="class">Class</label>
+
+    <select id="cars">
+      <option value="volvo"></option>
+      <option value="saab">Saab</option>
+      <option value="opel">Opel</option>
+      <option value="audi">Audi</option>
+    </select><br><br><br>
+    <label for="psw"><b>Registration code</b></label>
+    <input type="password" name="psw" required>
+
+    <button type="submit" class="btn">Search</button>
+  </form>
+</div>
+</div>
+
+
+
+</body>
+</html>
